@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="redes.css">
+    <link rel="shortcut icon" href="Imagens/Logo angelo.png" type="image/x-icon">
+    <title>Redes</title>
+</head>
+<body>
+    <h1>LYRICO <span class="span">FX</span></h1>
+
+    <div class="links">
+        <a href="index.html">Início</a>
+        <div class="barra">|</div>
+        <a href="redes.html" class="active">Redes</a>
+    </div>
+
+    <div class="icon-container">
+        <a href="https://wa.me/5575983469052" target="_blank" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+        </a>
+        <a href="https://discord.com/users/1126628366708117676" target="_blank" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+        </a>
+        <a href="https://www.tiktok.com/@lyricofx" target="_blank" class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok">
+        </a>
+    </div>
+
+    <script>
+        // Adiciona a classe 'active' ao link correto baseado na página
+        window.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop(); // Obtém o nome da página
+
+            if (currentPage === 'index.html') {
+                document.getElementById('link-inicio').classList.add('active'); // Adiciona 'active' no link Início
+            } else if (currentPage === 'redes.html') {
+                document.getElementById('link-redes').classList.add('active'); // Adiciona 'active' no link Redes
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
